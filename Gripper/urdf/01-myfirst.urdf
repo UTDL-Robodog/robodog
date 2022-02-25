@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot name="gripperarm">
+
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="40 10 10"/>
+      </geometry>
+      <origin xyz="20 5 5"/>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="first_link">
+    <visual>
+      <geometry>
+        <box size="104.3 20 20"/>
+      </geometry>
+      <origin xyz="52.15 10 0"/>
+    </visual>
+  </link>
+
+  <joint name="base_to_first_link" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-0.548" upper="0.548" velocity="0.5"/>
+    <parent link="base_link"/>
+    <child link="first_link"/>
+    <origin xyz="40 10 5"/>
+  </joint>
+
+  <link name="second_link">
+    <visual>
+      <geometry>
+        <box size="153.3 10 10"/>
+      </geometry>
+      <origin xyz="76.65 10 0"/>
+    </visual>
+  </link>
+
+  <joint name="first_to_second_link" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-0.548" upper="0.548" velocity="0.5"/>
+    <parent link="first_link"/>
+    <child link="second_link"/>
+    <origin xyz="104.3 -15 0"/>
+  </joint>
+
+
+</robot>
