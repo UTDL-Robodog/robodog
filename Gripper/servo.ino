@@ -32,6 +32,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define USMIN  600 // This is the rounded 'minimum' microsecond length based on the minimum pulse of 150
 #define USMAX  2400 // This is the rounded 'maximum' microsecond length based on the maximum pulse of 600
 #define SERVO_FREQ 50 // Analog servos run at ~50 Hz updates
+#define MAX_ANGLE 270 // Macimum angle that each motor can rotate to
 
 // our servo # counter
 uint8_t servonum = 0;
@@ -72,7 +73,7 @@ void motorFunction(int motorNumber, double angle){
    * We convert input angle to pulseLength
    * We pass pulseLength to setPWM so that servoNumber <motorNumber> will be HIGH from tick 0 to tick <pulseLength>
    */
-  int pulseLength = (int)map(angle, 0, 180, SERVOMIN, SERVOMAX);
+  int pulseLength = (int)map(angle, 0, MAX_ANGLE, SERVOMIN, SERVOMAX);
   pwm.setPWM(motorNumber, 0, pulseLength);
   delay(500);
 }
