@@ -1,0 +1,97 @@
+{
+    "1": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "2": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "3": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "4": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "5": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "6": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "7": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "8": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "9": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "10": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "11": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "12": {
+        "location": "leg",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "13": {
+        "location": "gripper",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "14": {
+        "location": "gripper",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "15": {
+        "location": "gripper",
+        "angle": 0,
+        "angle_limit": 270
+    },
+
+    "16": {
+        "location": "gripper",
+        "angle": 0,
+        "angle_limit": 270
+    }
+}
