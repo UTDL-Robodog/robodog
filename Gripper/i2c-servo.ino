@@ -64,12 +64,14 @@ void setup() {
 
 String command="";
 int data=0;
+int counter = 0;
 void loop() {
   /*
    * Using the input ports on the teensy, send the input parameters to motorFunction to control any motor
    */
    
   /*
+   * Test 1: Calibration of Motor
    * Code to test the minimum and maximum pulse lengths
    if(Serial.available())
    {
@@ -82,7 +84,28 @@ void loop() {
    }
    */
 
-   // Call motorFunction here
+   /*
+    * Test 2: Multiple Motors
+    * 1. Does it work for one motor?
+    * YES
+    
+    * 2. Does it work for multiple motors?
+    * YES
+    
+    * 3. Do the motors get driven in parallel (at the same time) or one by one?
+    * AT THE SAME TIME
+    
+    * 4. What happens when a motor is given a faulty angle (ex. beyond it's range)
+    * DOES NOT ROTATE
+    
+    * 5. Can it handle different motors on the same bus? (we won't have all the same kind of motors)
+    * THEORETICALLY YES. STILL NEED TO TEST WHEN THE MOTORS ARE AVAILABLE.
+    
+    * 6. How long does it take the motor to cover it's full range of motion (max time)? 
+    * TRIED TO TIME USING CODE, BUT ALWAYS SHOWS 1ms
+    * ACC. TO DATASHEET, SPEED = 0.12s / 60deg => 270deg SHOULD TAKE 540ms.
+    * LINK TO DATASHEET = https://www.robotics.org.za/DS3235-270
+    */
 }
 
 void motorFunction(int motorNumber, double angle){
@@ -92,5 +115,4 @@ void motorFunction(int motorNumber, double angle){
    */
   int pulseLength = (int)map(angle, 0, MAX_ANGLE, SERVOMIN, SERVOMAX);
   pwm.setPWM(motorNumber, 0, pulseLength);
-  delay(500);
 }
