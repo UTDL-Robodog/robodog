@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: urdf_with_tutorial
+    relative_path: urdf/urdf_with_tutorial.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/urdf_with_tutorial.srdf
+  CONFIG:
+    author_name: Jack Naimer
+    author_email: jacknaimer@gmail.com
+    generated_timestamp: 1649863802

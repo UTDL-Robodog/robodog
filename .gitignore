@@ -127,3 +127,27 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+ROS/devel/_setup_util.py
+.vscode/settings.json
+ROS/devel/_setup_util.py
+ROS/devel/.catkin
+ROS/devel/.rosinstall
+ROS/devel/local_setup.sh
+ROS/devel/setup.sh
+ROS/devel/share/control/cmake/controlConfig.cmake
+ROS/devel/share/example/cmake/exampleConfig.cmake
+ROS/devel/share/urdf_arm_config/cmake/urdf_arm_configConfig-version.cmake
+ROS/devel/share/urdf_arm_config/cmake/urdf_arm_configConfig.cmake
+ROS/devel/share/urdf_with_tutorial/cmake/urdf_with_tutorialConfig-version.cmake
+ROS/devel/share/urdf_with_tutorial/cmake/urdf_with_tutorialConfig.cmake
+ROS/src/CMakeLists.txt
+ROS/devel/_setup_util.py
+ROS/devel/.catkin
+ROS/devel/.rosinstall
+ROS/devel/local_setup.sh
+ROS/devel/setup.sh
+ROS/devel/share/control/cmake/controlConfig.cmake
+ROS/devel/share/example/cmake/exampleConfig.cmake
+ROS/devel/.rosinstall
+ROS/devel/local_setup.sh
+ROS/devel/.catkin
