@@ -1,0 +1,36 @@
+source ros_entrypoint.sh
+cd ~
+source .bashrc
+cd /
+
+roscore
+
+cd docker
+cd robodog
+cd ROS
+catkin_make
+source devel/setup.bash
+roslaunch urdf_arm_config demo.launch
+
+
+
+
+# for moveitpy
+
+source ros_entrypoint.sh
+cd ~
+source .bashrc
+cd /
+cd docker
+cd robodog
+cd ROS
+catkin_make
+source devel/setup.bash
+cd src
+rosrun urdf_arm_config move_group_python_interface_tutorial.py
+
+
+/docker/robodog/ROS/devel/lib/urdf_arm_config/move_group_python_interface_tutorial.py
+
+
+roslaunch urdf_arm_config /docker/robodog/ROS/src/urdf_arm_config/scripts/move_group_python_interface_tutorial.py

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /robodog/ROS/devel/setup.sh
+    local-name: /docker/robodog/ROS/devel/setup.sh
